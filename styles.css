@@ -1,9 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
 body {
   background: black;
   color: white;
+  display: grid;
+  grid-template:
+    "header header header" 100px
+    "main main main"
+    "footer footer footer" 100px/
+    20% 1fr 20%;
+  min-height: 100vh;
+}
+header {
+  grid-area: header;
+  background-color: #1f2937;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+main {
+  grid-area: main;
+  display: grid;
+  justify-items: center;
 }
 
+footer {
+  grid-area: footer;
+  background-color: #1f2937;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
 button {
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 85px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+button:hover {
+  background-color: lightgray;
+  transform: scale(1.01) translate(0px, -2px);
+  box-shadow: inset 16px 5px 12px 3px rgba(0, 0, 0, 0.3);
+}
+button:active {
+  transform: scale(0.99) translate(0px, -2px);
+}
+#result {
+  width: 200%;
+  translate: 25%;
+  border-radius: 100px;
+}
+.calc {
+  margin: 100px;
+  height: 685px;
+  width: 400px;
+  border: 1px white solid;
+  border-radius: 50px;
+  padding: 60px 30px;
+}
+.screen {
+  background-color: lightseagreen;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.screen p {
+  padding: 10px 0;
+  text-align: right;
+  font-size: 20px;
+}
+.numbers {
+  display: grid;
+  grid-auto-flow: unset;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
 }

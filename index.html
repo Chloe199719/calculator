@@ -8,31 +8,43 @@
     <title>Calculator</title>
   </head>
   <body>
-    <h1>Calculator</h1>
-    <p class="history"></p>
-    <p class="visor">0</p>
-    <div class="numbers">
-      <button class="numbBtn" value="0" id="0">0</button>
-      <button class="numbBtn" value="1" id="1">1</button>
-      <button class="numbBtn" value="2" id="2">2</button>
-      <button class="numbBtn" value="3" id="3">3</button>
-      <button class="numbBtn" value="4" id="4">4</button>
-      <button class="numbBtn" value="5" id="5">5</button>
-      <button class="numbBtn" value="6" id="6">6</button>
-      <button class="numbBtn" value="7" id="7">7</button>
-      <button class="numbBtn" value="8" id="8">8</button>
-      <button class="numbBtn" value="9" id="9">9</button>
-      <button class="numbBtn" value="." id=".">.</button>
-    </div>
-    <div>
-      <button class="operationBtn" id="divison">/</button>
-      <button class="operationBtn" id="multi">*</button>
-      <button class="operationBtn" id="subtra">-</button>
-      <button class="operationBtn" id="add">+</button>
-      <button class="operationBtn" id="result">=</button>
-      <button class="operationBtn" id="reset">C</button>
-      <button class="operationBtn" id="del">Backspace</button>
-    </div>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <main>
+      <div class="calc">
+        <div class="screen">
+          <p class="history">0</p>
+          <p class="visor">0</p>
+        </div>
+        <div class="numbers">
+          <button class="operationBtn" id="reset">CE</button>
+          <button class="operationBtn" id="del">C</button>
+          <button class="operationBtn" id="divison1">%</button>
+          <button class="operationBtn" id="divison">/</button>
+          <button class="numbBtn" value="7" id="7">7</button>
+          <button class="numbBtn" value="8" id="8">8</button>
+          <button class="numbBtn" value="9" id="9">9</button>
+          <button class="operationBtn" id="add">+</button
+          ><button class="numbBtn" value="4" id="4">4</button>
+          <button class="numbBtn" value="5" id="5">5</button>
+          <button class="numbBtn" value="6" id="6">6</button>
+          <button class="operationBtn" id="subtra">-</button>
+
+          <button class="numbBtn" value="1" id="1">1</button>
+          <button class="numbBtn" value="2" id="2">2</button>
+          <button class="numbBtn" value="3" id="3">3</button>
+          <button class="operationBtn" id="multi">*</button
+          ><button class="numbBtn" value="0" id="0">0</button>
+          <button class="numbBtn" value="." id=".">.</button>
+
+          <button class="operationBtn" id="result">=</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright Chloe Projects <span id="year"></span></p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
