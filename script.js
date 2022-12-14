@@ -22,6 +22,8 @@ const value = function () {
   if (repeat === 1 && operator === 0) {
     num1 = [];
     repeat = 0;
+    operation = [];
+    historyvisor.textContent = 0;
   }
   if (num1.includes(`.`) && this.value === "." && turn === 0) return;
   if (num2.includes(`.`) && this.value === ".") return;
