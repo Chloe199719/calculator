@@ -13,20 +13,21 @@ body {
     "header header header" 100px
     "main main main"
     "footer footer footer" 100px/
-    20% 1fr 20%;
+    20% calc(100vw - 40%) 20%;
   min-height: 100vh;
 }
 header {
   grid-area: header;
   background-color: #1f2937;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 main {
   grid-area: main;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -56,12 +57,12 @@ button:active {
   border-radius: 100px;
 }
 .calc {
-  margin: 100px;
+  margin: 100px 0;
   height: 685px;
   width: 400px;
   border: 1px white solid;
   border-radius: 50px;
-  padding: 60px 30px;
+  padding: 30px 30px;
 }
 .screen {
   background-color: lightseagreen;
@@ -79,4 +80,9 @@ button:active {
   grid-auto-flow: unset;
   grid-template-columns: 25% 25% 25% 25%;
   justify-items: center;
+}
+@media screen and (max-width: 400px) {
+  .calc {
+    width: 100%;
+  }
 }
